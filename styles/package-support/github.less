@@ -1,0 +1,104 @@
+/*
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+title      Core Package Support: github                    +
+project    nord-atom-ui                                    +
+repository https://github.com/arcticicestudio/nord-atom-ui +
+author     Arctic Ice Studio                               +
+email      development@arcticicestudio.com                 +
+copyright  Copyright (C) 2019                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[References]
+Atom Packages
+  (https://atom.io/packages/github)
+*/
+.github-Git-root, .github-Github-root, .github-Reviews {
+  button.icon, span.icon, .hard-wrap-icons,
+  .github-CommitView-coAuthorToggle,
+  .github-FilePatchView-collapseButton,
+  .open-commit-detail-button {
+    padding: 0.1em 1em;
+    border: none !important;
+
+    &:hover, &:active, &:focus {
+      border: none !important;
+      background: inherit !important;
+      color: inherit !important;
+      text-decoration: underline;
+    }
+  }
+
+  .icon-ellipses:hover {
+    color: @nord5;
+  }
+
+  .github-CommitView-editor {
+    button {
+      border: none;
+    }
+  }
+}
+
+.github-HunkHeaderView-stageButton {
+  border-left: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.github-HunkHeaderView-discardButton {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.github-Reviews-topHeader {
+  padding: 0.6em;
+}
+
+.gutter[gutter-name="github-comment-icon"] {
+  width: 2.4em;
+}
+
+.github-PrTimeline .pre-timeline-item-icon {
+  margin-left: -40px;
+}
+
+.github-editorCommentGutterIcon button.icon {
+  padding: 0;
+  height: inherit;
+  line-height: inherit;
+  border: none !important;
+
+  &:hover, &:active, &:focus {
+    border: none !important;
+    background: inherit !important;
+    color: inherit !important;
+  }
+}
+
+.github-IssueishDetailView {
+  .github-PrCommitView-messageHeadline {
+    border: none !important;
+
+    &:hover, &:active, &:focus {
+      color: inherit !important;
+      background: none !important;
+      text-decoration: underline;
+    }
+  }
+}
+
+.github-CommitDetailView, .github-IssueishDetailView {
+  .github-FilePatchView-collapseButton {
+    border: none !important;
+    padding: 0.1em 1em;
+  }
+}
+
+.github-ReactionPicker-reaction {
+  padding: 0.1em 1em;
+  border: none !important;
+
+  &:hover, &:active, &:focus {
+    border: none !important;
+    color: inherit !important;
+  }
+}
